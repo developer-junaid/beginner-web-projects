@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/programmer.svg" type="image/svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <title>Project 01</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Border inside box */
+  }
+
+  :root{
+    --primary: #CA4361;
+    --gray: rgba(151,151,151,65);
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* Navbar */
+  nav {
+    display: flex;
+    padding: 40px;
+    padding-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav>ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  ul>li>.line{
+    border: 2px solid var(--primary);
+    width: 32px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.3s;
+  }
+
+  a:hover{
+    color: var(--primary);
+  }
+
+  a.active{
+    color: var(--primary);
+  }
+
+
+  nav.buttons{
+  }
+
+  .buttons > button{
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 6px;
+    width: 145px;
+    height: 51px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.3s;
+  }
+
+  button.filled{
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid transparent;
+  }
+
+  .filled:hover{
+    background-color: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+
+  button.outlined{
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+  }
+
+  .outlined:hover{
+    background-color: var(--primary);
+    color: white;
+    border-color: transparent;
+  }
+  /* Navbar */
+
+  /* Content */
+  main {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  main.hero {}
+
+  .hero > h1{
+    font-size: 55px;
+    width: 446px;
+    font-weight: 600;
+    margin-right: 60px;
+  }
+
+  h1 > span{
+    color: var(--primary);
+  }
+
+  .hero > p{
+    margin-top: 22px;
+    width: 370px;
+    font-size: 21px;
+    color: var(--gray);
+  }
+
+  .hero > .cta{
+    width: 270px;
+    height: 65px;
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-size: 21px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.3s;
+  }
+
+  .cta:hover{
+    background-color: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+
+
+
+  main.illustration {}
+
+  /* Content */
+</style>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <!-- Links -->
+    <ul>
+      <!-- Link -->
+      <li>
+        <a  href="_#">About me</a>
+        <div class="line"></div>
+      </li>
+      <!-- Link -->
+
+      <!-- Link -->
+      <li>
+        <a href="_#">Services</a>
+      </li>
+      <!-- Link -->
+
+      <!-- Link -->
+      <li>
+        <a href="_#">Company</a>
+      </li>
+      <!-- Link -->
+    </ul>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <!-- Button -->
+      <button class="filled">Sign up</button>
+      <!-- Button -->
+
+      <!-- Button -->
+      <button class="outlined">Login</button>
+      <!-- Button -->
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>I am a Full Stack <span>Web Application</span> Developer</h1>
+      <p>
+        I bring your ideas to life using my top-notch skills and more than 2
+        years of experience !
+      </p>
+      <button class="cta">Hire Me</button>
+    </section>
+
+    <!-- Illustration -->
+    <section class="illustration">
+      <img src="./assets/illustration.svg" alt="" />
+    </section>
+  </main>
+  <!-- Content -->
+  </div>
+</body>
+
+</html>
