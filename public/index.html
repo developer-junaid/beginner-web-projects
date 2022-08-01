@@ -20,9 +20,9 @@
     /* Border inside box */
   }
 
-  :root{
+  :root {
     --primary: #CA4361;
-    --gray: rgba(151,151,151,65);
+    --gray: rgba(151, 151, 151, 65);
   }
 
   body {
@@ -30,6 +30,7 @@
     color: #000000;
     max-width: 1440px;
     margin: 0 auto;
+   
   }
 
   /* Navbar */
@@ -46,7 +47,7 @@
     list-style-type: none;
   }
 
-  ul>li>.line{
+  ul>li>.line {
     border: 2px solid var(--primary);
     width: 32px;
     border-radius: 20px;
@@ -65,19 +66,18 @@
     transition-duration: 0.3s;
   }
 
-  a:hover{
+  a:hover {
     color: var(--primary);
   }
 
-  a.active{
+  a.active {
     color: var(--primary);
   }
 
 
-  nav.buttons{
-  }
+  nav.buttons {}
 
-  .buttons > button{
+  .buttons>button {
     font-size: 20px;
     margin-left: 10px;
     border-radius: 6px;
@@ -88,29 +88,30 @@
     transition-duration: 0.3s;
   }
 
-  button.filled{
+  button.filled {
     background-color: var(--primary);
     color: white;
     border: 1px solid transparent;
   }
 
-  .filled:hover{
+  .filled:hover {
     background-color: transparent;
     color: var(--primary);
     border-color: var(--primary);
   }
 
-  button.outlined{
+  button.outlined {
     border: 1px solid var(--primary);
     color: var(--primary);
     background-color: transparent;
   }
 
-  .outlined:hover{
+  .outlined:hover {
     background-color: var(--primary);
     color: white;
     border-color: transparent;
   }
+
   /* Navbar */
 
   /* Content */
@@ -124,25 +125,25 @@
 
   main.hero {}
 
-  .hero > h1{
+  .hero>h1 {
     font-size: 55px;
     width: 446px;
     font-weight: 600;
     margin-right: 60px;
   }
 
-  h1 > span{
+  h1>span {
     color: var(--primary);
   }
 
-  .hero > p{
+  .hero>p {
     margin-top: 22px;
     width: 370px;
     font-size: 21px;
     color: var(--gray);
   }
 
-  .hero > .cta{
+  .hero>.cta {
     width: 270px;
     height: 65px;
     background-color: var(--primary);
@@ -156,27 +157,143 @@
     transition-duration: 0.3s;
   }
 
-  .cta:hover{
+  .cta:hover {
     background-color: transparent;
     color: var(--primary);
     border-color: var(--primary);
   }
 
+  /* Menu */
+  .menu {
+    width: 280px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+  }
+
+  .close-icon {
+    margin-top: 40px;
+  }
+
+  .menu .divider {
+    border: 1px solid var(--gray);
+    margin: 40px 0;
+  }
+
+  .menu button {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .menu ul{
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .menu ul li{
+    list-style-type: none;
+    margin-top: 40px;
+  }
+
+  .menu a{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+  }
 
 
-  main.illustration {}
+
+
+  /* Mobile Responsive Code */
+  .visible {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+  /* large screens */
+  @media (max-width:1250px) {
+
+    .illustration {
+      display: none;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h1,
+    p {
+      margin-right: 0;
+    }
+
+    .hero h1 {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 40px;
+    }
+
+    .hero p {
+      width: 70%;
+      margin: 22px auto;
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+
+    .cta {
+      font-size: 18px !important;
+      width: 216px;
+      height: 52px;
+    }
+
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  /* Medium, Small screens */
+  @media (max-width:800px) {
+
+    .desktop-nav {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: flex;
+    }
+
+    .menu-icon {
+      cursor: pointer;
+    }
+
+    .close-icon {
+      cursor: pointer;
+    }
+
+  }
 
   /* Content */
 </style>
 
 <body>
-  <!-- Navbar -->
-  <nav>
+  <!-- Desktop Navbar -->
+  <nav class="desktop-nav">
     <!-- Links -->
     <ul>
       <!-- Link -->
       <li>
-        <a  href="_#">About me</a>
+        <a href="_#">About me</a>
         <div class="line"></div>
       </li>
       <!-- Link -->
@@ -205,7 +322,94 @@
       <!-- Button -->
     </div>
   </nav>
-  <!-- Navbar -->
+  <!-- Desktop Navbar -->
+
+  <!-- Mobile Navbar -->
+  <nav class="mobile-nav">
+    <!-- Logo -->
+    <div>
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M8 22C11.3137 22 14 19.3137 14 16C14 12.6863 11.3137 10 8 10C4.68629 10 2 12.6863 2 16C2 19.3137 4.68629 22 8 22Z"
+          fill="#CA4361" />
+        <path
+          d="M24 22C27.3137 22 30 19.3137 30 16C30 12.6863 27.3137 10 24 10C20.6863 10 18 12.6863 18 16C18 19.3137 20.6863 22 24 22Z"
+          fill="#CA4361" />
+      </svg>
+
+    </div>
+
+    <!-- Menu Icon -->
+    <div class="visible" id="menuIcon">
+      <svg class="menu-icon" width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M1.38889 9.91668C2.15595 9.91668 2.77778 9.28241 2.77778 8.50001C2.77778 7.71761 2.15595 7.08334 1.38889 7.08334C0.621827 7.08334 0 7.71761 0 8.50001C0 9.28241 0.621827 9.91668 1.38889 9.91668Z"
+          fill="black" />
+        <path
+          d="M23.6944 7.08334H6.8611C6.14006 7.08334 5.55554 7.67955 5.55554 8.41501V8.58501C5.55554 9.32047 6.14006 9.91668 6.8611 9.91668H23.6944C24.4155 9.91668 25 9.32047 25 8.58501V8.41501C25 7.67955 24.4155 7.08334 23.6944 7.08334Z"
+          fill="black" />
+        <path
+          d="M23.6944 14.1667H1.30556C0.584517 14.1667 0 14.7629 0 15.4983V15.6683C0 16.4038 0.584517 17 1.30556 17H23.6944C24.4155 17 25 16.4038 25 15.6683V15.4983C25 14.7629 24.4155 14.1667 23.6944 14.1667Z"
+          fill="black" />
+        <path
+          d="M23.6944 0H1.30556C0.584517 0 0 0.596207 0 1.33167V1.50167C0 2.23713 0.584517 2.83333 1.30556 2.83333H23.6944C24.4155 2.83333 25 2.23713 25 1.50167V1.33167C25 0.596207 24.4155 0 23.6944 0Z"
+          fill="black" />
+      </svg>
+    </div>
+
+
+
+  </nav>
+  <!-- Mobile Navbar -->
+
+  <!-- Menu -->
+  <div class="menu hidden" id="menu">
+    <!-- Close Icon -->
+    <div id="closeIcon">
+      <svg class="close-icon" width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L13.5938 13.5938M13.5938 1L1 13.5938L13.5938 1Z" stroke="black" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <!-- Button -->
+      <button class="filled">Sign up</button>
+      <!-- Button -->
+
+      <!-- Button -->
+      <button class="outlined">Login</button>
+      <!-- Button -->
+    </div>
+
+    <!-- Links -->
+    <ul>
+      <!-- Link -->
+      <li>
+        <a href="_#">About me</a>
+      </li>
+      <!-- Link -->
+
+      <!-- Link -->
+      <li>
+        <a href="_#">Services</a>
+      </li>
+      <!-- Link -->
+
+      <!-- Link -->
+      <li>
+        <a href="_#">Company</a>
+      </li>
+      <!-- Link -->
+    </ul>
+  </div>
+  <!-- Menu -->
+
+
 
   <!-- Content -->
   <main>
@@ -226,6 +430,30 @@
   </main>
   <!-- Content -->
   </div>
+
+  <!-- JAVASCRIPT  -->
+  <script>
+    const menuIcon = document.querySelector('#menuIcon')
+    const closeIcon = document.querySelector('#closeIcon')
+    const menu = document.querySelector('#menu')
+
+
+    menuIcon.addEventListener('click', () => {
+      console.log("Menu icon clicked !")
+      menuIcon.classList.replace("visible", "hidden")
+      menu.classList.replace("hidden", "visible")
+    })
+
+    closeIcon.addEventListener('click', () => {
+      console.log("Close icon clicked !")
+      menu.classList.replace("visible", "hidden")
+      menuIcon.classList.replace("hidden", "visible")
+    })
+
+
+
+  </script>
+  <!-- JAVASCRIPT  -->
 </body>
 
 </html>
