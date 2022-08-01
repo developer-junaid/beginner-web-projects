@@ -20,9 +20,9 @@
     /* Border inside box */
   }
 
-  :root{
+  :root {
     --primary: #CA4361;
-    --gray: rgba(151,151,151,65);
+    --gray: rgba(151, 151, 151, 65);
   }
 
   body {
@@ -46,7 +46,7 @@
     list-style-type: none;
   }
 
-  ul>li>.line{
+  ul>li>.line {
     border: 2px solid var(--primary);
     width: 32px;
     border-radius: 20px;
@@ -65,19 +65,18 @@
     transition-duration: 0.3s;
   }
 
-  a:hover{
+  a:hover {
     color: var(--primary);
   }
 
-  a.active{
+  a.active {
     color: var(--primary);
   }
 
 
-  nav.buttons{
-  }
+  nav.buttons {}
 
-  .buttons > button{
+  .buttons>button {
     font-size: 20px;
     margin-left: 10px;
     border-radius: 6px;
@@ -88,29 +87,30 @@
     transition-duration: 0.3s;
   }
 
-  button.filled{
+  button.filled {
     background-color: var(--primary);
     color: white;
     border: 1px solid transparent;
   }
 
-  .filled:hover{
+  .filled:hover {
     background-color: transparent;
     color: var(--primary);
     border-color: var(--primary);
   }
 
-  button.outlined{
+  button.outlined {
     border: 1px solid var(--primary);
     color: var(--primary);
     background-color: transparent;
   }
 
-  .outlined:hover{
+  .outlined:hover {
     background-color: var(--primary);
     color: white;
     border-color: transparent;
   }
+
   /* Navbar */
 
   /* Content */
@@ -124,25 +124,25 @@
 
   main.hero {}
 
-  .hero > h1{
+  .hero>h1 {
     font-size: 55px;
     width: 446px;
     font-weight: 600;
     margin-right: 60px;
   }
 
-  h1 > span{
+  h1>span {
     color: var(--primary);
   }
 
-  .hero > p{
+  .hero>p {
     margin-top: 22px;
     width: 370px;
     font-size: 21px;
     color: var(--gray);
   }
 
-  .hero > .cta{
+  .hero>.cta {
     width: 270px;
     height: 65px;
     background-color: var(--primary);
@@ -156,7 +156,7 @@
     transition-duration: 0.3s;
   }
 
-  .cta:hover{
+  .cta:hover {
     background-color: transparent;
     color: var(--primary);
     border-color: var(--primary);
@@ -165,6 +165,43 @@
 
 
   main.illustration {}
+
+  @media (max-width:1250px) {
+
+    .illustration {
+      display: none;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h1,
+    p {
+      margin-right: 0;
+    }
+
+    .hero h1 {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 40px;
+    }
+
+    .hero p {
+      width: 70%;
+      margin: 22px auto;
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+
+    .cta {
+      font-size: 18px !important;
+      width: 216px;
+      height: 52px;
+    }
+
+  }
+
 
   /* Content */
 </style>
@@ -176,7 +213,7 @@
     <ul>
       <!-- Link -->
       <li>
-        <a  href="_#">About me</a>
+        <a href="_#">About me</a>
         <div class="line"></div>
       </li>
       <!-- Link -->
