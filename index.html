@@ -30,6 +30,7 @@
     color: #000000;
     max-width: 1440px;
     margin: 0 auto;
+   
   }
 
   /* Navbar */
@@ -162,11 +163,62 @@
     border-color: var(--primary);
   }
 
+  /* Menu */
+  .menu {
+    width: 280px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+  }
+
+  .close-icon {
+    margin-top: 40px;
+  }
+
+  .menu .divider {
+    border: 1px solid var(--gray);
+    margin: 40px 0;
+  }
+
+  .menu button {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .menu ul{
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .menu ul li{
+    list-style-type: none;
+    margin-top: 40px;
+  }
+
+  .menu a{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+  }
 
 
-  main.illustration {}
+
 
   /* Mobile Responsive Code */
+  .visible {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
 
 
   /* large screens */
@@ -221,10 +273,14 @@
       display: flex;
     }
 
-    .menu-icon{
+    .menu-icon {
       cursor: pointer;
     }
-    
+
+    .close-icon {
+      cursor: pointer;
+    }
+
   }
 
   /* Content */
@@ -268,7 +324,7 @@
   </nav>
   <!-- Desktop Navbar -->
 
-  <!-- Desktop Navbar -->
+  <!-- Mobile Navbar -->
   <nav class="mobile-nav">
     <!-- Logo -->
     <div>
@@ -284,7 +340,7 @@
     </div>
 
     <!-- Menu Icon -->
-    <div>
+    <div class="visible" id="menuIcon">
       <svg class="menu-icon" width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M1.38889 9.91668C2.15595 9.91668 2.77778 9.28241 2.77778 8.50001C2.77778 7.71761 2.15595 7.08334 1.38889 7.08334C0.621827 7.08334 0 7.71761 0 8.50001C0 9.28241 0.621827 9.91668 1.38889 9.91668Z"
@@ -299,10 +355,61 @@
           d="M23.6944 0H1.30556C0.584517 0 0 0.596207 0 1.33167V1.50167C0 2.23713 0.584517 2.83333 1.30556 2.83333H23.6944C24.4155 2.83333 25 2.23713 25 1.50167V1.33167C25 0.596207 24.4155 0 23.6944 0Z"
           fill="black" />
       </svg>
-
     </div>
+
+
+
   </nav>
-  <!-- Desktop Navbar -->
+  <!-- Mobile Navbar -->
+
+  <!-- Menu -->
+  <div class="menu hidden" id="menu">
+    <!-- Close Icon -->
+    <div id="closeIcon">
+      <svg class="close-icon" width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L13.5938 13.5938M13.5938 1L1 13.5938L13.5938 1Z" stroke="black" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <!-- Button -->
+      <button class="filled">Sign up</button>
+      <!-- Button -->
+
+      <!-- Button -->
+      <button class="outlined">Login</button>
+      <!-- Button -->
+    </div>
+
+    <!-- Links -->
+    <ul>
+      <!-- Link -->
+      <li>
+        <a href="_#">About me</a>
+      </li>
+      <!-- Link -->
+
+      <!-- Link -->
+      <li>
+        <a href="_#">Services</a>
+      </li>
+      <!-- Link -->
+
+      <!-- Link -->
+      <li>
+        <a href="_#">Company</a>
+      </li>
+      <!-- Link -->
+    </ul>
+  </div>
+  <!-- Menu -->
+
+
 
   <!-- Content -->
   <main>
@@ -323,6 +430,30 @@
   </main>
   <!-- Content -->
   </div>
+
+  <!-- JAVASCRIPT  -->
+  <script>
+    const menuIcon = document.querySelector('#menuIcon')
+    const closeIcon = document.querySelector('#closeIcon')
+    const menu = document.querySelector('#menu')
+
+
+    menuIcon.addEventListener('click', () => {
+      console.log("Menu icon clicked !")
+      menuIcon.classList.replace("visible", "hidden")
+      menu.classList.replace("hidden", "visible")
+    })
+
+    closeIcon.addEventListener('click', () => {
+      console.log("Close icon clicked !")
+      menu.classList.replace("visible", "hidden")
+      menuIcon.classList.replace("hidden", "visible")
+    })
+
+
+
+  </script>
+  <!-- JAVASCRIPT  -->
 </body>
 
 </html>
