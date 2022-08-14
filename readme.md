@@ -1,5 +1,16 @@
-## Hello All, this is GitHub repository for all the files for youtube-projects section of my youtube videos.
+### Project Live Demo: Coming soon ...
 
-### Please select your desired branch and you'll find the project related files there.
+### Youtube Playlist: https://youtu.be/IqSAdqMqJK4
 
-### Youtube Playlist: https://youtube.com/playlist?list=PL6nhfdAg020cT6Z0OLzmu-gfN7J3xKPKc (Become a Freelance Frontend Developer by Building Projects)
+## Learnings
+
+- Web Development Basics
+- HTML, CSS Basics
+- **Mobile First Development**
+- How to convert design to code (Step by Step)
+- Free Deployment using Netlify
+- **Creating Fully Responsive Website**
+
+## Images
+
+<img src="./images/foodpanda-home.png" />
