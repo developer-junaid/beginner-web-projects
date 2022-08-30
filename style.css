@@ -138,11 +138,12 @@ margin-top: 1rem;
   width: 70%;
   margin-top: 9rem;
   min-width: 220px;
+  
 }
 
 @media screen and (min-width: 768px) {
   nav > .logo > svg {
-    display: inline;
+    display: inline;`
   }
 }
 
