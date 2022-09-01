@@ -11,7 +11,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .max-w-xl {
@@ -141,6 +141,75 @@ section.hero {
   min-width: 220px;
 }
 
+/* Partners Section */
+.partners {
+  margin: 4rem 0;
+  position: relative;
+}
+
+.partners .backdrop-text {
+  padding: 0 2rem;
+  display: inline;
+  color: rgba(188, 186, 186, 0.12);
+  font-weight: 900;
+  font-size: 4.5rem;
+  position: absolute;
+  top: -40px;
+  left: -10px;
+}
+
+.partners .caption {
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.partners .background-image {
+  z-index: -1;
+  position: relative;
+  display: block;
+  min-height: 280px;
+  height: 100%;
+  background: url("./images/partner-bg.png");
+  background-size: cover;
+}
+
+.partners .content {
+  background-color: white;
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 12%);
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  margin-top: -4rem;
+}
+
+.content p {
+  color: rgb(176, 174, 174);
+  font-size: 0.9rem;
+}
+
+.content .header-text {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: rgb(18, 17, 17);
+}
+
+.content button {
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0 5rem;
+  height: 50px;
+  width: 100%;
+  color: white;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Medium */
 @media screen and (min-width: 768px) {
   nav > .logo > svg {
     display: inline;
@@ -182,6 +251,7 @@ section.hero {
   }
 }
 
+/* Large */
 @media screen and (min-width: 960px) {
   nav > .profile-icon-medium {
     display: none;
@@ -196,6 +266,7 @@ section.hero {
   }
 }
 
+/* Extra Large */
 @media screen and (min-width: 1264px) {
   .hero .bg-wrapper {
     max-height: 500px;
@@ -206,6 +277,7 @@ section.hero {
   }
 }
 
+/* 2XL */
 @media screen and (min-width: 1440px) {
   .hero .bg-wrapper {
     max-height: 550px;
