@@ -17,6 +17,7 @@ body {
 .max-w-xl {
   max-width: 1300px;
   margin: 0 auto;
+  position: relative;
 }
 
 nav {
@@ -156,6 +157,7 @@ section.hero {
   position: absolute;
   top: -40px;
   left: -10px;
+  z-index: -2;
 }
 
 .partners .caption {
@@ -172,6 +174,7 @@ section.hero {
   height: 100%;
   background: url("./images/partner-bg.png");
   background-size: cover;
+  background-position: center;
 }
 
 .partners .content {
@@ -197,7 +200,6 @@ section.hero {
   margin-top: 1rem;
   background-color: var(--primary-color);
   border: none;
-  padding: 0 5rem;
   height: 50px;
   width: 100%;
   color: white;
@@ -249,6 +251,39 @@ section.hero {
     align-items: center;
     margin-left: 1rem;
   }
+
+  /* Partners Section */
+
+  .partners .backdrop-text {
+    padding: 0 3rem;
+  }
+
+  .partners .caption {
+    padding: 0 3rem;
+  }
+
+  .partners .background-image {
+    min-height: 404px;
+  }
+
+  .partners .content {
+    margin: 0 3rem;
+    margin-top: -20rem;
+    max-width: 350px;
+    padding: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .content .header-text {
+    font-size: 1.5rem;
+  }
+
+  .content button {
+    font-size: 1rem;
+  }
 }
 
 /* Large */
@@ -264,6 +299,11 @@ section.hero {
   .hero .bg-wrapper {
     max-height: 400px;
   }
+
+  /* Partners Section */
+  .partners .content {
+    max-width: 450px;
+  }
 }
 
 /* Extra Large */
@@ -274,6 +314,32 @@ section.hero {
 
   .hero h3 {
     font-size: 2.8rem;
+  }
+
+  /* Partners */
+  /* Partners Section */
+  .partners .content {
+    max-width: 600px;
+    text-align: right;
+  }
+
+  .content button {
+    max-width: 240px;
+    margin-top: 2rem;
+  }
+
+  .content p {
+    text-align: left;
+  }
+
+  .partners .backdrop-text {
+    font-size: 10rem;
+    top: -100px;
+    left: -40px;
+  }
+
+  .partners .caption {
+    font-size: 1.5rem;
   }
 }
 
