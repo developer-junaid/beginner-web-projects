@@ -72,22 +72,29 @@ nav .login-btn {
 /* Hero Section */
 section.hero {
   padding: 0 1rem;
-  position: relative;
   height: 500px;
   border: 2px solid transparent;
+  position: relative;
+}
+
+.hero h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 9rem;
+  min-width: 220px;
+  width: 70%;
 }
 
 .hero .bg-wrapper {
-  z-index: -1;
   position: absolute;
-  margin-left: 67%;
-  display: block;
-  max-height: 335px;
-  height: 100%;
   width: 33%;
-  float: right;
-  background: #fff left top no-repeat;
+  margin-left: 67%;
   background: url("./images/hero-bg-xl.png");
+  height: 100%;
+  display: block;
+  z-index: -1;
+  float: right;
+  max-height: 335px;
   background-size: cover;
 }
 
@@ -104,42 +111,33 @@ section.hero {
   padding: 1.5rem 1rem;
   border-radius: 10px;
   outline: none;
-  font-size: 0.9rem;
-  color: #333;
   border: 1px solid #dcdcdc;
-  box-shadow: 0 0.3rem 2rem rgb(0 0 0 / 10%);
-}
-
-.input-container svg {
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  color: #333;
+  font-size: 0.9rem;
+  box-shadow: 0 0.3rem 2rem rgb(0 0 0 /10%);
 }
 
 .actions input::placeholder {
   color: darkgrey;
 }
 
-.actions > button {
-  margin-top: 1rem;
+.input-container svg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.actions button {
   background-color: var(--primary-color);
+  margin-top: 1rem;
+  color: white;
   border: none;
-  padding: 0 5rem;
   height: 64px;
   width: 100%;
-  color: white;
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 300;
   cursor: pointer;
-}
-
-.hero h3 {
-  font-size: 2rem;
-  font-weight: 300;
-  width: 70%;
-  margin-top: 9rem;
-  min-width: 220px;
 }
 
 /* Partners Section */
@@ -150,10 +148,9 @@ section.hero {
 
 .partners .backdrop-text {
   padding: 0 2rem;
-  display: inline;
+  font-size: 4.5rem;
   color: rgba(188, 186, 186, 0.12);
   font-weight: 900;
-  font-size: 4.5rem;
   position: absolute;
   top: -40px;
   left: -10px;
@@ -167,27 +164,25 @@ section.hero {
 }
 
 .partners .background-image {
-  z-index: -1;
-  position: relative;
-  display: block;
-  min-height: 280px;
-  height: 100%;
   background: url("./images/partner-bg.png");
+  min-height: 280px;
   background-size: cover;
+  height: 100%;
   background-position: center;
+  z-index: -1;
 }
 
 .partners .content {
   background-color: white;
   box-shadow: 0 2px 28px 0 rgb(0 0 0 / 12%);
-  padding: 1rem 2rem;
   margin: 0 1rem;
   margin-top: -4rem;
+  padding: 1rem;
 }
 
 .content p {
-  color: rgb(176, 174, 174);
   font-size: 0.9rem;
+  color: rgb(176, 174, 174);
 }
 
 .content .header-text {
@@ -197,21 +192,19 @@ section.hero {
 }
 
 .content button {
-  margin-top: 1rem;
   background-color: var(--primary-color);
+  margin-top: 1rem;
+  color: white;
   border: none;
+  padding: 0 5rem;
   height: 50px;
   width: 100%;
-  color: white;
   border-radius: 8px;
   font-size: 0.8rem;
   font-weight: 300;
   cursor: pointer;
 }
 
-/* Media Queries */
-
-/* Medium */
 @media screen and (min-width: 768px) {
   nav > .logo > svg {
     display: inline;
@@ -222,25 +215,23 @@ section.hero {
   }
 
   .hero .bg-wrapper {
-    max-height: 800px;
+    max-height: 900px;
   }
 
-  .actions {
+  .hero .actions {
     background-color: white;
-    padding: 1rem;
-    margin-right: 0rem;
-    box-shadow: 0 0.3rem 2rem rgb(0 0 0 / 10%);
+    box-shadow: 0 0.3rem 2rem rgb(0 0 0 /10%);
     display: flex;
-    align-items: center;
+    padding: 1rem;
     max-width: 960px;
-  }
-
-  .actions .input-container {
-    width: 80%;
   }
 
   .actions input {
     box-shadow: none;
+  }
+
+  .actions .input-container {
+    width: 80%;
   }
 
   .actions button {
@@ -253,7 +244,6 @@ section.hero {
   }
 
   /* Partners Section */
-
   .partners .backdrop-text {
     padding: 0 3rem;
   }
@@ -281,12 +271,11 @@ section.hero {
     font-size: 1.5rem;
   }
 
-  .content button {
+  .content .button {
     font-size: 1rem;
   }
 }
 
-/* Large */
 @media screen and (min-width: 960px) {
   nav > .profile-icon-medium {
     display: none;
@@ -306,7 +295,6 @@ section.hero {
   }
 }
 
-/* Extra Large */
 @media screen and (min-width: 1264px) {
   .hero .bg-wrapper {
     max-height: 500px;
@@ -316,7 +304,6 @@ section.hero {
     font-size: 2.8rem;
   }
 
-  /* Partners */
   /* Partners Section */
   .partners .content {
     max-width: 600px;
@@ -334,7 +321,7 @@ section.hero {
 
   .partners .backdrop-text {
     font-size: 10rem;
-    top: -100px;
+    top: -130px;
     left: -40px;
   }
 
@@ -343,7 +330,6 @@ section.hero {
   }
 }
 
-/* 2XL */
 @media screen and (min-width: 1440px) {
   .hero .bg-wrapper {
     max-height: 550px;
