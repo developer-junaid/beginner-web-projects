@@ -205,6 +205,55 @@ section.hero {
   cursor: pointer;
 }
 
+/* Cities */
+.cities {
+  margin-top: 10rem;
+}
+
+.cities .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+  overflow-x: scroll;
+}
+
+.container .card {
+  height: 272px;
+  max-width: 230px;
+  min-width: 230px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.2);
+}
+
+.card p {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 3;
+}
+
+/* Media Queries */
 @media screen and (min-width: 768px) {
   nav > .logo > svg {
     display: inline;
@@ -292,6 +341,13 @@ section.hero {
   /* Partners Section */
   .partners .content {
     max-width: 450px;
+  }
+
+  /* Cities Section */
+  .cities .container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
   }
 }
 
