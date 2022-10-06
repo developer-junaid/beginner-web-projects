@@ -345,6 +345,66 @@ section.hero {
   margin-top: -10rem !important;
 }
 
+/* FAQ */
+.FAQ {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 10rem;
+}
+
+.FAQ .heading {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.1rem;
+}
+
+.FAQ .text {
+  margin-top: 1.5rem;
+  font-weight: lighter;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.FAQ .list {
+  list-style-type: none;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.FAQ li {
+  width: 100%;
+  font-weight: lighter;
+  line-height: 1.8rem;
+}
+
+.FAQ li > span {
+  color: var(--primary-color);
+}
+
+.FAQ .divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.201);
+  margin-top: 1.5rem;
+}
+
+.FAQ .sub-heading {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-top: 1.5rem;
+}
+
+.FAQ .bold-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.FAQ .indented {
+  padding-left: 2rem;
+}
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
   nav > .logo > svg {
