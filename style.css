@@ -366,6 +366,11 @@ section.hero {
   line-height: 1.8rem;
 }
 
+.FAQ .text > a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
 .FAQ .list {
   list-style-type: none;
   width: 100%;
