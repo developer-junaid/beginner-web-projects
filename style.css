@@ -410,6 +410,45 @@ section.hero {
   padding-left: 2rem;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+footer .divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.201);
+  margin: 1.5rem auto;
+}
+
+footer .branding {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding > svg {
+  width: 10rem;
+}
+
+.branding .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials img {
+  width: 30px;
+  margin-left: 1rem;
+}
+
+/* Branding */
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
   nav > .logo > svg {
