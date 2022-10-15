@@ -448,6 +448,65 @@ footer .branding {
 }
 
 /* Branding */
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.links .first-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.7rem;
+  margin-top: 0.5rem;
+}
+
+.links .second-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.7rem;
+  margin-top: 0.5rem;
+}
+
+.links .third-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.7rem;
+  margin-top: 0.5rem;
+}
+
+.links .fourth-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.7rem;
+  margin-top: 0.5rem;
+  font-weight: lighter;
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(137, 135, 135);
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
+.links a:hover {
+  color: var(--primary-color);
+}
+
+.first-col p {
+  color: rgb(137, 135, 135);
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
@@ -600,6 +659,50 @@ footer .branding {
 
   .content-container .buttons-container {
     margin-top: 2rem;
+  }
+
+  /* Branding */
+
+  .links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .links .first-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 1.7rem;
+    margin-top: 0.5rem;
+  }
+
+  .links .second-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 1.7rem;
+    margin-top: 0.5rem;
+  }
+
+  .links .third-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 1.7rem;
+    margin-top: 0.5rem;
+  }
+
+  .links .fourth-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 1.7rem;
+    margin-top: 0.5rem;
+    font-weight: lighter;
   }
 }
 
