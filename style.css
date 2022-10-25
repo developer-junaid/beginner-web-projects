@@ -206,30 +206,30 @@ section.hero {
 }
 
 /* Cities */
+
 .cities {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 .cities .container {
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: start;
-  align-items: center;
   padding: 1rem;
   overflow-x: scroll;
+  justify-content: start;
+  align-items: center;
 }
 
 .container .card {
   height: 272px;
-  max-width: 230px;
   min-width: 230px;
-  margin-right: 1rem;
-  margin-top: 1rem;
+  max-width: 230px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  z-index: 1;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
 }
 
 .card img {
@@ -246,11 +246,10 @@ section.hero {
 .card p {
   position: absolute;
   bottom: 10px;
-  left: 30px;
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
-  z-index: 3;
+  left: 30px;
 }
 
 /* App */
@@ -291,18 +290,15 @@ section.hero {
 }
 
 .image-container img {
-  width: 100%;
-  z-index: 2;
-  max-width: 424px;
   position: absolute;
+  width: 100%;
+  max-width: 424px;
+  z-index: 2;
   top: -80px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-}
-
-.container .content-container {
 }
 
 .content-container .sub-heading {
@@ -319,7 +315,6 @@ section.hero {
 .content-container .buttons-container {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .buttons-container .center-svg {
@@ -327,7 +322,6 @@ section.hero {
 }
 
 /* Office */
-
 .office {
   margin-top: 10rem;
 }
@@ -346,15 +340,16 @@ section.hero {
 }
 
 /* FAQ */
+
 .FAQ {
-  width: 100%;
   padding: 1rem;
   margin-top: 10rem;
+  width: 100%;
 }
 
 .FAQ .heading {
-  margin-top: 1.5rem;
   font-size: 2rem;
+  margin-top: 1.5rem;
   font-weight: bold;
   line-height: 2.1rem;
 }
@@ -377,7 +372,7 @@ section.hero {
   margin-top: 1.5rem;
 }
 
-.FAQ li {
+.FAQ .list > li {
   width: 100%;
   font-weight: lighter;
   line-height: 1.8rem;
@@ -395,15 +390,15 @@ section.hero {
 }
 
 .FAQ .sub-heading {
+  margin-top: 1.5rem;
   font-size: 1.3rem;
   font-weight: bolder;
-  margin-top: 1.5rem;
 }
 
 .FAQ .bold-text {
-  font-size: 1.1rem;
-  font-weight: bold;
   margin-top: 1.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .FAQ .indented {
@@ -424,6 +419,7 @@ footer .divider {
   margin: 1.5rem auto;
 }
 
+/* Footer > Branding */
 footer .branding {
   display: flex;
   width: 100%;
@@ -447,55 +443,27 @@ footer .branding {
   margin-left: 1rem;
 }
 
-/* Branding */
+/* Footer > Links */
 .links {
   width: 100%;
   display: flex;
   flex-direction: column-reverse;
 }
 
-.links .first-col {
+.links .col {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  line-height: 1.7rem;
   margin-top: 0.5rem;
-}
-
-.links .second-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   line-height: 1.7rem;
-  margin-top: 0.5rem;
-}
-
-.links .third-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.7rem;
-  margin-top: 0.5rem;
-}
-
-.links .fourth-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.7rem;
-  margin-top: 0.5rem;
-  font-weight: lighter;
 }
 
 .links a {
   text-decoration: none;
   color: rgb(137, 135, 135);
-  font-size: 0.9rem;
   font-weight: lighter;
+  font-size: 0.9rem;
 }
 
 .links a:hover {
@@ -504,16 +472,16 @@ footer .branding {
 
 .first-col p {
   color: rgb(137, 135, 135);
-  font-size: 0.9rem;
   font-weight: lighter;
+  font-size: 0.9rem;
 }
 
-/* Countries */
+/* Footer > Countries */
 .countries {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
@@ -604,9 +572,7 @@ footer .branding {
 
   /* App */
   .app .container {
-    background: #e21b70;
     min-height: 314px;
-    z-index: -1;
   }
 
   .app .caption {
@@ -628,9 +594,13 @@ footer .branding {
   }
 
   .container .image-container {
-    text-align: right;
     width: 45%;
+    text-align: right;
     max-height: 480px;
+  }
+
+  .image-container img {
+    min-width: 500px;
   }
 
   .content-container .sub-heading {
@@ -639,10 +609,6 @@ footer .branding {
 
   .content-container .buttons-container {
     margin-top: 1rem;
-  }
-
-  .image-container img {
-    min-width: 500px !important;
   }
 }
 
@@ -664,11 +630,11 @@ footer .branding {
     max-width: 450px;
   }
 
-  /* Cities Section */
+  /* Cities */
   .cities .container {
     flex-wrap: wrap;
-    justify-content: space-evenly;
     overflow: hidden;
+    justify-content: space-evenly;
   }
 
   /* App */
@@ -677,55 +643,22 @@ footer .branding {
   }
 
   .image-container img {
-    min-width: 600px !important;
+    min-width: 600px;
   }
 
   .content-container .buttons-container {
     margin-top: 2rem;
   }
 
-  /* Branding */
-
+  /* Links */
   .links {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .links .first-col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    line-height: 1.7rem;
-    margin-top: 0.5rem;
-  }
-
-  .links .second-col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    line-height: 1.7rem;
-    margin-top: 0.5rem;
-  }
-
-  .links .third-col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    line-height: 1.7rem;
-    margin-top: 0.5rem;
-  }
-
-  .links .fourth-col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    line-height: 1.7rem;
-    margin-top: 0.5rem;
-    font-weight: lighter;
+  .links .col {
+    align-items: start;
+    justify-content: start;
   }
 }
 
