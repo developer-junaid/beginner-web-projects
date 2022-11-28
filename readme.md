@@ -1,6 +1,7 @@
-### Project Live Demo: Coming soon ...
+### Project Live Demo: https://foodpanda-css-clone.netlify.app/
 
-### Youtube Playlist: https://youtu.be/IqSAdqMqJK4
+### Youtube Playlist: https://youtu.be/IqSAdqMqJK4\
+### Youtube Project Video : https://youtu.be/i5YXTOdTizY
 
 ## Learnings
 
