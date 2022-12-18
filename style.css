@@ -203,6 +203,10 @@ body {
   margin: 0 1rem;
 }
 
+.yt-text {
+  display: none;
+}
+
 /* Media Queries */
 @media screen and (min-width: 650px) {
   .nav__centered_desktop {
@@ -211,6 +215,10 @@ body {
 
   .nav__centered_mobile {
     display: none;
+  }
+
+  .yt-text {
+    display: inline-block;
   }
 }
 
