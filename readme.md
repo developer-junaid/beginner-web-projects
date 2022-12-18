@@ -12,8 +12,8 @@
 - - Video : https://youtu.be/IqSAdqMqJK4
 
 ## Preview
+<img src="./images/project-01.png" />
 
-<img src="./images/foodpanda-home.png" />
 
 2. Project 02: Portfolio Landing Page Clone
 
@@ -21,8 +21,8 @@
 - - Video : https://youtu.be/i5YXTOdTizY
 
 ## Preview
+<img src="./images/foodpanda-home.png" />
 
-<img src="./images/project-01.png" />
 
 3. Project 03: YouTube Landing Page Clone (Under Development ...)
 
